@@ -4,7 +4,7 @@ const moves = {
     // Electric moves
     thunderbolt: new Move(
         "Thunderbolt",
-        90,
+        9,
         70,
         "electric"
     ),
@@ -12,7 +12,7 @@ const moves = {
     // Fire moves
     firePunch: new Move(
         "Fire Punch",
-        80,
+        8,
         80,
         "fire"
     ),
@@ -20,7 +20,7 @@ const moves = {
     // Water moves
     waterGun: new Move(
         "Water Gun",
-        75,
+        7,
         75,
         "water"
     ),
@@ -28,7 +28,7 @@ const moves = {
     // Grass moves
     leechSeed: new Move(
         "Leech Seed",
-        55,
+        5,
         100,
         "grass"
     ),
@@ -36,7 +36,7 @@ const moves = {
     // Normal moves
     headbutt: new Move(
         "Headbutt",
-        50,
+        5,
         100,
         "normal"
     ),
