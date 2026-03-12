@@ -13,12 +13,6 @@ async function chooseMove(pokemon) {
   return pokemon.moves.find(m => m.name === answer.move);
 }
 
-function showHp(pokemon){
-    console.log(`${pokemon.name} has ${pokemon.hp}HP`);
-}
 
-function hasFainted(pokemon){
-    console.log(`${pokemon.name} has fainted`);
-}
 
-export {chooseMove, showHp, hasFainted};
+export default chooseMove;
