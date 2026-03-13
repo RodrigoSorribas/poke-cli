@@ -1,8 +1,9 @@
 import chooseMove from "../cli/userInput.js";
-import {showHp, hasFainted, attackOutput} from "../cli/logger.js"
+import {intro, showHp, hasFainted, attackOutput} from "../cli/logger.js"
 import damageCalculation from "./damageCalculation.js";
 
 async function battleLoop(player, enemy){
+    intro(player, enemy);
     while(true){
         const move = await chooseMove(player);
         const enemyMove = enemy.moves[Math.floor(Math.random()*enemy.moves.length)];
@@ -27,6 +28,7 @@ function resolveTurn(attacker, defender, move){
     let damage = damageCalculation(attacker, defender, move);
     defender.takeDamage(damage);
     attackOutput(attacker, move);
+    if(defender.hp < 0) defender.hp = 0;
     showHp(defender)
 }
 

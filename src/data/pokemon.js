@@ -8,7 +8,8 @@ const pokemons = {
         55,
         40,
         90,
-        [moves.thunderbolt, moves.headbutt]
+        [moves.thunderbolt, moves.headbutt],
+        "electric"
     ),
 
     charmander: new Pokemon(
@@ -17,7 +18,8 @@ const pokemons = {
         52,
         43,
         65,
-        [moves.firePunch, moves.headbutt]
+        [moves.firePunch, moves.headbutt],
+        "fire"
     ),
 
     squirtle: new Pokemon(
@@ -26,7 +28,8 @@ const pokemons = {
         48,
         65,
         43,
-        [moves.waterGun, moves.headbutt]
+        [moves.waterGun, moves.headbutt],
+        "water"
     ),
 
     bulbasaur: new Pokemon(
@@ -35,7 +38,8 @@ const pokemons = {
         49,
         49,
         45,
-        [moves.leechSeed, moves.headbutt]
+        [moves.leechSeed, moves.headbutt],
+        "grass"
     ),
 };
 

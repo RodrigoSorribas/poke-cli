@@ -1,5 +1,5 @@
 class Pokemon {
-    constructor(name, hp, attack, defense, speed, moves){
+    constructor(name, hp, attack, defense, speed, moves, type){
         this.name = name;
         this.hp = hp;
         this.maxHp = hp;
@@ -7,6 +7,7 @@ class Pokemon {
         this.defense = defense;
         this.speed = speed;
         this.moves = moves;
+        this.type = type
     }
 
     takeDamage(damage){
